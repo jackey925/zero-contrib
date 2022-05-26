@@ -14,6 +14,7 @@ type target struct {
 	Addr        string        `key:",optional"`
 	User        string        `key:",optional"`
 	Password    string        `key:",optional"`
+	AppName     string        `key:"appname,optional"`
 	Service     string        `key:",optional"`
 	GroupName   string        `key:",optional"`
 	Clusters    []string      `key:",optional"`

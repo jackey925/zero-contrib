@@ -41,6 +41,8 @@ func (b *builder) Build(url resolver.Target, conn resolver.ClientConn, opts reso
 	}
 
 	cc := &constant.ClientConfig{
+		// 订阅者名称，显示在 Nacos UI 中
+		AppName:             tgt.AppName,
 		NamespaceId:         tgt.NamespaceID,
 		Username:            tgt.User,
 		Password:            tgt.Password,

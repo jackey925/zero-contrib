@@ -41,10 +41,11 @@ func (b *builder) Build(url resolver.Target, conn resolver.ClientConn, opts reso
 	}
 
 	cc := &constant.ClientConfig{
-		NamespaceId: tgt.NamespaceID,
-		Username:    tgt.User,
-		Password:    tgt.Password,
-		TimeoutMs:   uint64(tgt.Timeout),
+		NamespaceId:         tgt.NamespaceID,
+		Username:            tgt.User,
+		Password:            tgt.Password,
+		TimeoutMs:           uint64(tgt.Timeout),
+		NotLoadCacheAtStart: true,
 	}
 
 	if tgt.CacheDir != "" {

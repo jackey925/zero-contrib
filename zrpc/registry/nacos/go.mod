@@ -12,5 +12,5 @@ require (
 	github.com/aliyun/alibaba-cloud-sdk-go v1.61.1402 // indirect
 	github.com/go-errors/errors v1.4.1 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/nacos-group/nacos-sdk-go/v2 v2.0.3
+	github.com/nacos-group/nacos-sdk-go/v2 v2.1.0
 )
